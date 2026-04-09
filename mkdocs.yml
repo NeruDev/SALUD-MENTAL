@@ -1,0 +1,26 @@
+site_name: Salud Mental Docs
+site_description: Recurso educativo sobre salud mental en español
+site_author: NeruDev
+theme:
+  name: material
+  language: es
+  palette:
+  - scheme: default
+    primary: teal
+    accent: cyan
+  features:
+  - navigation.tabs
+  - navigation.sections
+  - toc.integrate
+nav:
+- Inicio: index.md
+- Ansiedad:
+  - Introducción: ansiedad/README.md
+  - Ejercicios: ansiedad/ejercicios.md
+  - Teoría: ansiedad/teoria.md
+- Bienestar Mental:
+  - Introducción: bienestar/README.md
+- Depresión:
+  - Introducción: depresion/README.md
+  - Recursos: depresion/recursos.md
+  - Teoría: depresion/teoria.md
