@@ -13,6 +13,12 @@ La arquitectura separa:
 - contenido publicado y navegable (`docs/`)
 - automatización y validaciones (`scripts/`)
 
+## Sitio oficial publicado
+
+La documentación HTML generada automáticamente se publica en GitHub Pages en la siguiente dirección oficial:
+
+- https://nerudev.github.io/SALUD-MENTAL/
+
 ## Arquitectura actual
 
 ### 1) Capa de contenido fuente: `modules/`
@@ -40,6 +46,7 @@ Cada carpeta de primer nivel representa un dominio temático de salud mental:
 
 - `mkdocs.yml` define tema, idioma y navegación.
 - `.github/workflows/deploy.yml` construye y publica en GitHub Pages al hacer push en `main`.
+- URL oficial de publicación: https://nerudev.github.io/SALUD-MENTAL/
 
 ### 4) Capa de calidad y convenciones
 
