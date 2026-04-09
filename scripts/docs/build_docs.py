@@ -36,6 +36,8 @@ from scripts.utils.common import (
 )
 
 MKDOCS_YML = PROJECT_ROOT / "mkdocs.yml"
+STYLESHEETS_DIR = PROJECT_ROOT / "stylesheets"
+DOCS_STYLESHEETS_DIR = DOCS_DIR / "stylesheets"
 
 INDEX_TEMPLATE = """\
 # Salud Mental — Documentación Educativa
@@ -120,6 +122,25 @@ def _generate_index(module_names: list[str]) -> None:
     print_ok(f"Generated {relative_to_root(index_path)}")
 
 
+def _copy_stylesheets() -> None:
+    """Copy custom CSS files from /stylesheets into /docs/stylesheets."""
+    if not STYLESHEETS_DIR.exists():
+        print_warn("stylesheets directory not found — skipping CSS copy.")
+        return
+
+    ensure_dir(DOCS_STYLESHEETS_DIR)
+
+    css_files = sorted(STYLESHEETS_DIR.glob("*.css"))
+    if not css_files:
+        print_warn("No .css files found in stylesheets — skipping CSS copy.")
+        return
+
+    for css_file in css_files:
+        dest_file = DOCS_STYLESHEETS_DIR / css_file.name
+        shutil.copy2(css_file, dest_file)
+        print_ok(f"Copied {relative_to_root(css_file)} → {relative_to_root(dest_file)}")
+
+
 def _update_mkdocs_nav(nav: list[dict]) -> None:
     """Replace the nav: section in mkdocs.yml with the generated navigation."""
     if not MKDOCS_YML.exists():
@@ -149,6 +170,9 @@ def main() -> None:
     if not copied_modules:
         print_error("No modules were copied. Aborting.")
         sys.exit(1)
+
+    print("\n→ Copying stylesheets to /docs ...")
+    _copy_stylesheets()
 
     print("\n→ Generating index.md ...")
     _generate_index(copied_modules)
