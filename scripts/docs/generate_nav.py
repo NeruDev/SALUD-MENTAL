@@ -25,17 +25,42 @@ from scripts.utils.common import (
 
 # Human-readable labels for known module folders
 MODULE_LABELS: dict[str, str] = {
-    "ansiedad": "Ansiedad",
-    "depresion": "Depresión",
-    "bienestar": "Bienestar Mental",
+    "fundamentos": "Fundamentos",
+    "bienestar": "Bienestar",
+    "trastornos": "Trastornos",
+    "etapas_vida": "Etapas de Vida",
+    "contexto_social": "Contexto Social",
+    "prevencion": "Prevención",
+    "recursos": "Recursos",
 }
 
 # Human-readable labels for known filenames (without extension)
 FILE_LABELS: dict[str, str] = {
     "README": "Introducción",
-    "teoria": "Teoría",
-    "ejercicios": "Ejercicios",
-    "recursos": "Recursos",
+    "que_es_salud_mental": "Qué es la salud mental",
+    "dimensiones": "Dimensiones",
+    "factores_riesgo": "Factores de riesgo",
+    "autocuidado": "Autocuidado",
+    "habitos_saludables": "Hábitos saludables",
+    "regulacion_emocional": "Regulación emocional",
+    "ansiedad": "Ansiedad",
+    "depresion": "Depresión",
+    "estres_postraumatico": "Estrés postraumático",
+    "adicciones": "Adicciones",
+    "infancia": "Infancia",
+    "adolescencia": "Adolescencia",
+    "adultez": "Adultez",
+    "adulto_mayor": "Adulto mayor",
+    "familia": "Familia",
+    "trabajo": "Trabajo",
+    "redes_sociales": "Redes sociales",
+    "cultura": "Cultura",
+    "estrategias": "Estrategias",
+    "intervenciones": "Intervenciones",
+    "educacion": "Educación",
+    "ayuda_profesional": "Ayuda profesional",
+    "lineas_apoyo": "Líneas de apoyo",
+    "bibliografia": "Bibliografía",
 }
 
 

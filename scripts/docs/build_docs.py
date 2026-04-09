@@ -56,9 +56,13 @@ accesible y responsable sobre temas de salud mental.
 """
 
 MODULE_DESCRIPTIONS: dict[str, str] = {
-    "ansiedad": "Comprende la ansiedad, sus causas y técnicas para manejarla.",
-    "depresion": "Información sobre la depresión y recursos de apoyo.",
-    "bienestar": "Hábitos y prácticas para promover el bienestar mental.",
+    "fundamentos": "Conceptos base para comprender la salud mental y sus dimensiones.",
+    "bienestar": "Hábitos y prácticas para cuidar el bienestar emocional en la vida diaria.",
+    "trastornos": "Panorama educativo de trastornos frecuentes y rutas de apoyo.",
+    "etapas_vida": "Retos y factores protectores de salud mental según el ciclo vital.",
+    "contexto_social": "Impacto de familia, trabajo, redes y cultura en la salud mental.",
+    "prevencion": "Estrategias e intervenciones para prevención y detección temprana.",
+    "recursos": "Guías de ayuda profesional, líneas de apoyo y bibliografía confiable.",
 }
 
 

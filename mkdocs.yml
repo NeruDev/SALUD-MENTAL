@@ -14,13 +14,41 @@ theme:
   - toc.integrate
 nav:
 - Inicio: index.md
-- Ansiedad:
-  - Introducción: ansiedad/README.md
-  - Ejercicios: ansiedad/ejercicios.md
-  - Teoría: ansiedad/teoria.md
-- Bienestar Mental:
+- Bienestar:
+  - Autocuidado: bienestar/autocuidado.md
+  - Hábitos saludables: bienestar/habitos_saludables.md
   - Introducción: bienestar/README.md
-- Depresión:
-  - Introducción: depresion/README.md
-  - Recursos: depresion/recursos.md
-  - Teoría: depresion/teoria.md
+  - Regulación emocional: bienestar/regulacion_emocional.md
+- Contexto Social:
+  - Cultura: contexto_social/cultura.md
+  - Familia: contexto_social/familia.md
+  - Introducción: contexto_social/README.md
+  - Redes sociales: contexto_social/redes_sociales.md
+  - Trabajo: contexto_social/trabajo.md
+- Etapas de Vida:
+  - Adolescencia: etapas_vida/adolescencia.md
+  - Adultez: etapas_vida/adultez.md
+  - Adulto mayor: etapas_vida/adulto_mayor.md
+  - Infancia: etapas_vida/infancia.md
+  - Introducción: etapas_vida/README.md
+- Fundamentos:
+  - Dimensiones: fundamentos/dimensiones.md
+  - Factores de riesgo: fundamentos/factores_riesgo.md
+  - Qué es la salud mental: fundamentos/que_es_salud_mental.md
+  - Introducción: fundamentos/README.md
+- Prevención:
+  - Educación: prevencion/educacion.md
+  - Estrategias: prevencion/estrategias.md
+  - Intervenciones: prevencion/intervenciones.md
+  - Introducción: prevencion/README.md
+- Recursos:
+  - Ayuda profesional: recursos/ayuda_profesional.md
+  - Bibliografía: recursos/bibliografia.md
+  - Líneas de apoyo: recursos/lineas_apoyo.md
+  - Introducción: recursos/README.md
+- Trastornos:
+  - Adicciones: trastornos/adicciones.md
+  - Ansiedad: trastornos/ansiedad.md
+  - Depresión: trastornos/depresion.md
+  - Estrés postraumático: trastornos/estres_postraumatico.md
+  - Introducción: trastornos/README.md
