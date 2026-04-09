@@ -1,0 +1,56 @@
+/* Base Theme Colors (Miku Inspired, Soft) */
+:root {
+  --md-primary-fg-color: #39c5bb;
+  --md-primary-fg-color--light: #5eead4;
+  --md-primary-fg-color--dark: #2aa79f;
+
+  --md-accent-fg-color: #ff77aa;
+}
+
+/* Dark Mode Adjustments (Better Readability) */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0f172a;
+  --md-default-fg-color: #e2e8f0;
+
+  --md-primary-fg-color: #39c5bb;
+  --md-accent-fg-color: #22d3ee;
+}
+
+/* Typography Improvements */
+.md-typeset {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  font-weight: 600;
+}
+
+/* Link Styling */
+.md-typeset a {
+  color: #39c5bb;
+}
+
+.md-typeset a:hover {
+  color: #ff77aa;
+}
+
+/* Navigation Highlight */
+.md-nav__item--active > .md-nav__link {
+  color: #ff77aa;
+}
+
+/* Header Enhancement */
+.md-header {
+  backdrop-filter: blur(6px);
+}
+
+/* List Spacing (Readability) */
+.md-typeset ul {
+  padding-left: 1.2rem;
+}
+
+.md-typeset li {
+  margin-bottom: 0.5rem;
+}

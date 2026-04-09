@@ -12,6 +12,8 @@ theme:
   - navigation.tabs
   - navigation.sections
   - toc.integrate
+extra_css:
+- stylesheets/extra.css
 nav:
 - Inicio: index.md
 - Bienestar:
