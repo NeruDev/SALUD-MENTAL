@@ -5,7 +5,7 @@ theme:
   name: material
   language: es
   palette:
-  - scheme: default
+  - scheme: slate
     primary: teal
     accent: cyan
   features:
